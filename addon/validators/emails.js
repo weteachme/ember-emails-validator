@@ -24,6 +24,9 @@ export default Base.extend({
       return this.createErrorMessage('invalid', invalidEmails.join(','));
     }
     return true;
+  },
+  getDependentsFor( attribute, options ) {
+    return [];
   }
 });
 // Emails.reopenClass({
