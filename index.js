@@ -2,5 +2,9 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-emails-validator'
+  name: 'ember-emails-validator',
+  included: function(app) {
+    this._super.included.apply(this, arguments);
+    return app;
+  }
 };
