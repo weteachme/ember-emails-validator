@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'emails-validator'
+  name: 'ember-emails-validator'
 };

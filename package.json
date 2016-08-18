@@ -1,5 +1,5 @@
 {
-  "name": "emails-validator",
+  "name": "ember-emails-validator",
   "version": "0.0.1",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
