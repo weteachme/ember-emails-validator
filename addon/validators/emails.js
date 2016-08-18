@@ -16,7 +16,6 @@ export default Base.extend({
     var invalidEmails = [];
     emailList.forEach(function(email) {
       email = $.trim(email);
-      console.log(email);
       if (!regex.test(email)){
         invalidEmails.push(email);
       }
