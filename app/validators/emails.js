@@ -1,1 +1,1 @@
-export { default } from 'emails-validator/validators/emails';
+export { default } from 'ember-emails-validator/validators/emails';

@@ -7,16 +7,16 @@ export default Base.extend({
     var regex = /^[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
     // assert(`[ember-cp-validations] [validator:emails] [${attribute}] no options were passed in`, !isEmpty(Object.keys(options)));
 
-    if(value.length > 0) {
-      emailList = value.split(',');
-    } else {
-      return this.createErrorMessage('invalid', value);
+    if(value === undefined || value === null) {
+        return true;
     }
+
+    emailList = value.split(',');
     
     var invalidEmails = [];
     emailList.forEach(function(email) {
       email = $.trim(email);
-      if (!regex.test(email)){
+      if (email && !regex.test(email)){
         invalidEmails.push(email);
       }
     });
