@@ -1,7 +1,7 @@
 {
   "name": "ember-emails-validator",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "CP validation for emails.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -50,5 +50,14 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weteachme/ember-emails-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/weteachme/ember-emails-validator/issues"
+  },
+  "homepage": "https://github.com/weteachme/ember-emails-validator"
 }
